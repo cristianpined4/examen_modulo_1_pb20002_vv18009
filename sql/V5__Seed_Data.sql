@@ -36,7 +36,7 @@ VALUES (3, 4, '2026-04-20 08:00', '2026-04-20 10:00');
 INSERT INTO reservas (investigador_id, laboratorio_id, fecha_inicio, fecha_fin)
 VALUES (1, 1, '2026-04-20 10:30', '2026-04-20 12:00');
 
--- Reserva con equipo en mantenimiento (debería fallar al intentar reservar el equipo)
+-- Reserva con equipo en mantenimiento
 INSERT INTO reserva_equipos (reserva_id, equipo_id) VALUES
 (1, 4),
 (2, 1);
